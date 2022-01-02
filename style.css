@@ -271,24 +271,22 @@ section .title::after{
 }
 .services .serv-content .card{
     width: 40%;
-    background: rgb(15, 15, 15);
+    background: rgb(17, 17, 17);
     text-align: center;
     border-radius: 6px;
     padding: 50px 30px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
-    background: #0096c7;
-}
+
 .services .serv-content .card .box{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover .box{
-    transform: scale(1.15);
+    transform: scale(1.14);
 }
 .services .serv-content .card i{
-    font-size: 50px;
+    font-size: 60px;
     color: #0096c7;
     transition: color 0.3s ease;
 }
@@ -407,7 +405,7 @@ section .title::after{
     content: "My Internships";
 }
 .teams .carousel .card{
-    background: rgb(2, 2, 2);
+    background: rgb(17, 17, 17);
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -415,9 +413,7 @@ section .title::after{
     transition: all 0.3s ease;
     color: white;
 }
-.teams .carousel .card:hover{
-    background: #0096c7;
-}
+
 .teams .carousel .card .box{
     display: flex;
     flex-direction: column;
@@ -426,7 +422,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover .box{
-    transform: scale(1.05);
+    transform: scale(1.14);
 }
 .teams .carousel .card .text{
     font-size: 25px;
@@ -466,6 +462,13 @@ section .title::after{
 .owl-dot:hover{
     background: #0096c7!important;
 }
+.expcard{
+    color: white;
+}
+.text{
+    color: #0096c7;
+}
+
 
 /* contact section styling */
 .contact .title::after{
