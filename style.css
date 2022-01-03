@@ -381,13 +381,13 @@ section .title::after{
     width: 90%;
 }
 .skills-content .right .python::before{
-    width: 70%;
+    width: 60%;
 }
 .skills-content .right .boots::before{
     width: 75%;
 }
 .skills-content .right .kotlin::before{
-    width: 30%;
+    width: 35%;
 }
 
 
