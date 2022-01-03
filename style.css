@@ -283,7 +283,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover .box{
-    transform: scale(1.14);
+    transform: scale(1.1);
 }
 .services .serv-content .card i{
     font-size: 60px;
@@ -307,7 +307,7 @@ section .title::after{
     width: 40%;
 }
 .skills .skills-content .left .text{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -342,7 +342,7 @@ section .title::after{
 }
 .skills .skills-content .right span{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 19px;
 }
 .skills .skills-content .right .line{
     height: 5px;
@@ -422,7 +422,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover .box{
-    transform: scale(1.14);
+    transform: scale(1.08);
 }
 .teams .carousel .card .text{
     font-size: 25px;
@@ -579,15 +579,15 @@ section .title::after{
 }
 #whats:hover, .wh:hover{
     color: green;
-    transform: scale(1.3);
+    transform: scale(1.08);
 }
 #gith:hover, .gh:hover{
     color: black;
-    transform: scale(1.3);
+    transform: scale(1.08);
 }
 #linkd:hover, .ld:hover{
     color: #036397;
-    transform: scale(1.3);
+    transform: scale(1.08);
 }
 
 /* footer section styling */
