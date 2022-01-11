@@ -4,6 +4,8 @@ This is a portfolio website created by me using HTML, CSS and JS. It was a diffi
 
 ## Website Images :
 
-
+<img src="images/img1.png" width="790" height="450">
+<img src="images/img2.png" width="790" height="450">
+<img src="images/img3.png" width="790" height="450">
 
 
