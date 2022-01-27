@@ -344,52 +344,6 @@ section .title::after{
     font-weight: 500;
     font-size: 19px;
 }
-.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: #0096c7;
-}
-.skills-content .right .html::before{
-    width: 80%;
-}
-.skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
-    width: 15%;
-}
-.skills-content .right .java::before{
-    width: 50%;
-}
-.skills-content .right .mysql::before{
-    width: 40%;
-}
-
-.skills-content .right .cpp::before{
-    width: 75%;
-}
-.skills-content .right .github::before{
-    width: 90%;
-}
-.skills-content .right .python::before{
-    width: 60%;
-}
-.skills-content .right .boots::before{
-    width: 75%;
-}
-.skills-content .right .kotlin::before{
-    width: 35%;
-}
-
 
 
 /* teams section styling */
