@@ -388,7 +388,7 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #0096c7;
+    border: 5px solid #0298ca;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
