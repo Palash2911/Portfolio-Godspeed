@@ -553,6 +553,15 @@ footer span a:hover{
 
 
 /* responsive media query start */
+@media (max-width: 1800px) and (min-width: 1500px)
+{
+    .column, .left{
+        margin-left: -140px;
+    }
+    .column, .right{
+        margin-right: -80px;
+    }
+}
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
