@@ -1,24 +1,22 @@
 const INFO = {
 	main: {
 		title: "Portfolio",
-		name: "XYZ",
-		email: "abcd@gmail.com",
+		name: "Palash Rambhia",
+		email: "palashzdk@gmail.com",
 		logo: "../logo.png",
 	},
 
 	socials: {
-		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
-		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
+		twitter: "https://twitter.com/Palash_Rambhia",
+		github: "https://github.com/Palash2911",
+		linkedin: "https://www.linkedin.com/in/palashrambhia/",
+		gmail: "palashzdk@gmail.com",
 	},
 
 	homepage: {
-		title: "Full-stack web and mobile app developer",
+		title: "Palash | Crafting Code -- Building Dreams",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+			"An enthusiastic techie on a journey to revolutionize the tech world, one line of code at a time, while constantly exploring new horizons to push the boundaries of innovation."
 	},
 
 	about: {

@@ -40,7 +40,7 @@ const About = () => {
 					</div>
 
 					<div className="about-container">
-						<div className="about-main">
+						{/* <div className="about-main">
 							<div className="about-right-side">
 								<div className="title about-title">
 									{INFO.about.title}
@@ -62,11 +62,11 @@ const About = () => {
 									</div>
 								</div>
 
-								{/* <div className="about-socials">
+								<div className="about-socials">
 									<Socials />
-								</div> */}
+								</div>
 							</div>
-						</div>
+						</div> */}
 						{/* <div className="about-socials-mobile">
 							<Socials />
 						</div> */}

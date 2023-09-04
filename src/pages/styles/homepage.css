@@ -14,7 +14,7 @@
 .homepage-first-area {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .homepage-first-area-left-side {
