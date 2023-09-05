@@ -4,7 +4,7 @@
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	padding-top: 130px;
+	padding-top: 100px;
 }
 
 .homepage-container {
@@ -38,7 +38,6 @@
 
 .homepage-image-container {
 	width: 370px;
-	height: 370px;
 }
 
 .homepage-image-wrapper {

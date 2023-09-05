@@ -8,6 +8,7 @@ import {
 	faGithub,
 	faStackOverflow,
 	faInstagram,
+	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
@@ -95,22 +96,8 @@ const Homepage = () => {
 								<div className="subtitle homepage-subtitle">
 									{INFO.homepage.description}
 								</div>
-							</div>
 
-							<div className="homepage-first-area-right-side">
-								<div className="homepage-image-container">
-									<div className="homepage-image-wrapper">
-										<img
-											src={palashimg}
-											alt="about"
-											className="homepage-image"
-										/>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div className="homepage-socials">
+								<div className="homepage-socials">
 							<a
 								href={INFO.socials.twitter}
 								target="_blank"
@@ -132,22 +119,12 @@ const Homepage = () => {
 								/>
 							</a>
 							<a
-								href={INFO.socials.stackoverflow}
+								href={INFO.socials.linkedin}
 								target="_blank"
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faStackOverflow}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.instagram}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faInstagram}
+									icon={faLinkedin}
 									className="homepage-social-icon"
 								/>
 							</a>
@@ -161,6 +138,20 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a>
+								</div>
+							</div>
+
+							<div className="homepage-first-area-right-side">
+								<div className="homepage-image-container">
+									<div className="homepage-image-wrapper">
+										<img
+											src={palashimg}
+											alt="about"
+											className="homepage-image"
+										/>
+									</div>
+								</div>
+							</div>
 						</div>
 
 						{/* <div className="homepage-projects">

@@ -33,48 +33,57 @@ const INFO = {
 
 	projects: [
 		{
-			title: "Project 1",
+			title: "Aikyam",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/Palash2911/Aikyam",
 		},
 
 		{
-			title: "Project 2",
+			title: "Rempo",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/Palash2911/Rempo",
 		},
 
 		{
-			title: "Project 3",
+			title: "Athena",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/Palash2911/Athena",
 		},
 
 		{
-			title: "Project 4",
+			title: "T-Vis",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/Palash2911/T-vis",
 		},
 
 		{
-			title: "Project 5",
+			title: "DRAIC Website",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/Palash2911/DRAIC-Website",
+		},
+
+		{
+			title: "UN-Toxic",
+			description:
+				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			linkText: "View Project",
+			link: "https://github.com/Palash2911/UN-Toxic",
 		},
 	],
 };
