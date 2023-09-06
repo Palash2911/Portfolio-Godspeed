@@ -1,3 +1,13 @@
+import as from "../assets/skills/androidstudio.png"
+import css from "../assets/skills/cssimg.jpg"
+import dart from "../assets/skills/dartimg.png"
+import fb from "../assets/skills/firebaseimg.png"
+import fl from "../assets/skills/flutter.png"
+import gh from "../assets/skills/github.png"
+import jet from "../assets/skills/jetpackimg.png"
+import kot from "../assets/skills/kotlin.png"
+import react from "../assets/skills/reactimg.jpg"
+
 const INFO = {
 	main: {
 		title: "Portfolio",
@@ -35,54 +45,86 @@ const INFO = {
 		{
 			title: "Aikyam",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
+				"Aikyam: Connecting NGOs and Volunteers for a Better World. NGOs post events, volunteers apply. Simple, User-Friendly, Impactful.",
+			logo: [
+				fl, 
+				dart, 
+				fb,
+				gh,
+				as,
+			],
+			linkText: "Discover Aikyam",
 			link: "https://github.com/Palash2911/Aikyam",
 		},
 
 		{
 			title: "Rempo",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-			linkText: "View Project",
+				"Rempo: Sell, Bid, and Buy Agricultural Land and Plots. List your huge properties effortlessly on our website.",
+			logo: [
+				kot,
+				as,
+				fb,
+				gh,
+				react,
+			],
+			linkText: "Explore Rempo",
 			link: "https://github.com/Palash2911/Rempo",
 		},
 
 		{
 			title: "Athena",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			linkText: "View Project",
+				"Athena: Your Storytelling Companion. Create captivating stories with ease using OpenAI's powerful API.",
+			logo: [
+				kot,
+				jet,
+				gh,
+				fb,
+				as,
+			],
+			linkText: "Gaze Athena",
 			link: "https://github.com/Palash2911/Athena",
 		},
 
 		{
 			title: "T-Vis",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
+				"Created T-vis: A Mobile App Enhancing Campus Security. Real-time vehicle tracking, QR code entry, and controlled access.",
+			logo: [
+				fl, 
+				dart, 
+				fb,
+				gh,
+				as,
+			],
+			linkText: "Drive to T-Vis",
 			link: "https://github.com/Palash2911/T-vis",
 		},
 
 		{
 			title: "DRAIC Website",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
+				"One of the Creators of DRAIC official Website. Showcasing portfolio of the club including its achievements, projects, and much more.",
+			logo: [
+				react,
+				css,
+				gh
+			],
+			linkText: "Glimpse at Draic",
 			link: "https://github.com/Palash2911/DRAIC-Website",
 		},
 
 		{
 			title: "UN-Toxic",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
+				"UN-Toxic: Your Quit Smoking Buddy. Track progress, set goals, stay motivated, and more with this Android app.",
+			logo: [
+				kot,
+				as,
+				fb,
+			],
+			linkText: "Intoxicate UN-Toxic",
 			link: "https://github.com/Palash2911/UN-Toxic",
 		},
 	],

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
@@ -12,11 +12,29 @@ import SEO from "../data/seo";
 import "./styles/contact.css";
 
 const Contact = () => {
+
+	const [formData, setFormData] = useState({
+		name: '',
+		email: '',
+		contact: '',
+		message: ''
+	  });
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 
 	const currentSEO = SEO.find((item) => item.page === "contact");
+
+	// const handleChange = (e) => {
+	// 	const { name, value } = e.target;
+    // 	setFormData({ ...formData, [name]: value });
+	// }
+	
+	// const handleSubmit = (e) => {
+	// 	e.preventDefault();
+	// 	console.log(this.state);
+	// }
 
 	return (
 		<React.Fragment>
@@ -40,9 +58,60 @@ const Contact = () => {
 
 					<div className="contact-container">
 						<div className="title contact-title">
-							<strong>Let's Get in Touch: Ways to Connect with Me</strong>
+							<strong>Let's Get in Touch</strong>
 						</div>
 
+						
+						{/* <div className="form-container">
+							<form onSubmit={this.handleSubmit}>
+							<form>
+							<div>
+								<label htmlFor="name">Name:</label>
+								<input
+								type="text"
+								id="name"
+								name="name"
+								value={formData.name}
+								// onChange={this.handleChange}
+								required
+								/>
+							</div>
+							<div>
+								<label htmlFor="email">Email:</label>
+								<input
+								type="email"
+								id="email"
+								name="email"
+								value={formData.email}
+								// onChange={this.handleChange}
+								required
+								/>
+							</div>
+							<div>
+								<label htmlFor="contact">Contact:</label>
+								<input
+								type="text"
+								id="contact"
+								name="contact"
+								value={formData.contact}
+								// onChange={this.handleChange}
+								required
+								/>
+							</div>
+							<div>
+								<label htmlFor="message">Message:</label>
+								<textarea
+								id="message"
+								name="message"
+								value={formData.message}
+								// onChange={this.handleChange}
+								required
+								/>
+							</div>
+							<button type="submit">Submit</button>
+							</form>
+						</div> */}
+						
 						<div className="subtitle contact-subtitle">
 							Thank you for your interest in getting in touch with
 							me. I welcome your feedback, questions, and
@@ -57,19 +126,8 @@ const Contact = () => {
 							periods. Alternatively, you can use the contact form
 							on my website to get in touch. Simply fill out the
 							required fields and I'll get back to you as soon as
-							possible. Finally, if you prefer to connect on
-							social media, you can find me on{" "}
-							<a
-								href={INFO.socials.instagram}
-								target="_blank"
-								rel="noreferrer"
-							>
-								{INFO.socials.instagram}
-							</a>
-							. I post regular updates and engage with my
-							followers there, so don't hesitate to reach out.
-							Thanks again for your interest, and I look forward
-							to hearing from you!
+							possible.{" "}
+							. 
 						</div>
 					</div>
 

@@ -1,13 +1,14 @@
 .all-projects-container {
+	border-radius: 20px;
 	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin-left: -35px;
-	margin-right: -35px;
-	margin-top: 2%;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 2%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    align-items: flex-start;
+	margin-left: -20px;
+}
 
 .all-projects-project {
 	width: calc(100% / 3);

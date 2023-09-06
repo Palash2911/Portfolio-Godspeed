@@ -45,9 +45,9 @@ const Projects = () => {
 							universe.</h3>
 						</div>
 
-						<div className="subtitle projects-subtitle">
+						{/* <div className="subtitle projects-subtitle">
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quia nostrum voluptatibus necessitatibus pariatur ratione beatae voluptate alias! Iure asperiores atque sed, possimus perspiciatis repellat dolorum omnis maiores molestiae labore neque illum. Nulla optio dicta, nesciunt temporibus ad quo, officia tempore libero aliquam, sit numquam recusandae esse similique molestias debitis.
-						</div>
+						</div> */}
 
 						<div className="projects-list">
 							<AllProjects />
