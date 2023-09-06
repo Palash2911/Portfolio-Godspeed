@@ -10,7 +10,7 @@ import react from "../assets/skills/reactimg.jpg"
 
 const INFO = {
 	main: {
-		title: "Portfolio",
+		title: "Just Me",
 		name: "Palash Rambhia",
 		email: "palashzdk@gmail.com",
 		logo: "../logo.png",
