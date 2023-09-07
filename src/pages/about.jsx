@@ -72,7 +72,7 @@ const About = () => {
 						</div> */}
 						<div className="homepage-works">
 								<Works />
-							</div>
+						</div>
 					</div>
 					<div className="page-footer">
 						<Footer />

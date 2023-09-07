@@ -8,21 +8,24 @@ import Article from "../components/articles/article";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
+import Achieve from "../data/achievements";
+import Achievement from "../components/achievements/achieve"
+import Card from "../components/common/card";
 
 import "./styles/articles.css";
+import achievements from "../data/achievements";
 
 const Articles = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 
-	const currentSEO = SEO.find((item) => item.page === "articles");
+	const currentSEO = SEO.find((item) => item.page === "achievements");
 
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Articles | ${INFO.main.title}`}</title>
+				<title>{`Achievements | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
 				<meta
 					name="keywords"
@@ -39,7 +42,18 @@ const Articles = () => {
 						</div>
 					</div>
 
-					<div className="articles-main-container">
+					<div className="achieve-main-container">
+							<div className="achieve-container">
+							{	
+								Achieve.map((achieve, index) => (
+									<div className="achieve-article" key={index}>
+										<Achievement description={achieve} />
+									</div>
+								))
+							}
+						</div>
+					</div>
+					{/* <div className="articles-main-container">
 						<div className="title articles-title">
 							{INFO.articles.title}
 						</div>
@@ -66,7 +80,7 @@ const Articles = () => {
 								))}
 							</div>
 						</div>
-					</div>
+					</div> */}
 					<div className="page-footer">
 						<Footer />
 					</div>

@@ -14,7 +14,7 @@ const SEO = [
 	},
 
 	{
-		page: "articles",
+		page: "achievements",
 		description:
 		"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod aspernatur doloribus incidunt nam inventore error ad ipsa aliquam dolorum maxime.",
 		keywords: ["", "", ""],

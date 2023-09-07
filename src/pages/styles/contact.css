@@ -29,15 +29,55 @@
 }
 
 .contact-container {
-	height: 300px;
+	width: 90%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	margin: auto;
 	margin-top: 120px;
 	align-items: center;
 	padding: 2%;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+
+.inner-contact-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.form-input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	transition: border-color 0.3s ease;
+  }
+  
+  .form-input:focus {
+	outline: none;
+	border-color: #007bff;
+  }
+  
+  .submit-button {
+	background-color: #007bffa7;
+	color: #fff;
+	margin-top: 20px;
+	width: 50%;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+  }
+  
+  .submit-button:hover {
+	background-color: #007bff;
+	scale: 1.1;
+  }
 
 
 .socials-container {
