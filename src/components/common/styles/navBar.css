@@ -14,7 +14,7 @@
 	position: fixed;
 	top: 3vh;
 	z-index: 999;
-	width: 80%;
+	width: 100%;
 }
 
 .nav-background {
@@ -63,11 +63,9 @@
 }
 
 @media (max-width: 600px) {
+
 	.navbar {
-		margin-left: 25%;
-		margin-right: 25%;
-		width: 80%;
-		font-size: 80%;
+		font-size: 12px;
 	}
 
 	.nav-background {

@@ -103,18 +103,20 @@
 		align-items: flex-start;
 		width: 100%;
 		order: 2;
+		margin-bottom: 30px;		
 	}
 
 	.homepage-title {
 		width: 100% !important;
 		margin-top: 20px;
-		order: 2;
+		font-size: 12px;
 	}
 
 	.homepage-subtitle {
 		width: 100% !important;
 		margin-top: 10px;
-		order: 3;
+		text-align: justify;
+		font-size: 15px;
 	}
 
 	.homepage-first-area-right-side {
