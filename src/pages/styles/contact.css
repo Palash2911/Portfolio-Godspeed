@@ -46,23 +46,24 @@
 	flex-direction: row;
 	justify-content: space-around;
 	width: 100%;
+	flex-wrap: wrap;	
 }
 
 .form-input {
-	width: 100%;
+	width: 80%;
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 	transition: border-color 0.3s ease;
-  }
+}
   
-  .form-input:focus {
+.form-input:focus {
 	outline: none;
 	border-color: #007bff;
-  }
+}
   
-  .submit-button {
+.submit-button {
 	background-color: #007bffa7;
 	color: #fff;
 	margin-top: 20px;
@@ -72,12 +73,12 @@
 	border-radius: 5px;
 	cursor: pointer;
 	transition: all 0.3s ease;
-  }
+}
   
-  .submit-button:hover {
+.submit-button:hover {
 	background-color: #007bff;
 	scale: 1.1;
-  }
+}
 
 
 .socials-container {
