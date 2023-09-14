@@ -54,4 +54,12 @@
 	.articles-subtitle {
 		width: 100% !important;
 	}
+
+}
+
+@media (max-width: 600px){
+	.articles-logo{
+		top: 8vh;
+		left: 2%;
+	}
 }

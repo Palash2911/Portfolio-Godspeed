@@ -9,8 +9,11 @@ import {
 	faStackOverflow,
 	faInstagram,
 	faLinkedin,
+	faWhatsapp,
+	faWhatsappSquare,
 } from "@fortawesome/free-brands-svg-icons";
 
+import Resume from '../assets/Palash_Resume.pdf'
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
@@ -97,49 +100,75 @@ const Homepage = () => {
 									{INFO.homepage.description}
 								</div>
 
+
+							<div className="homepage-resume-social">
 								<div className="homepage-socials">
-							<a
-								href={INFO.socials.twitter}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faTwitter}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.github}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faGithub}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.linkedin}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faLinkedin}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={`mailto:${INFO.main.email}`}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faMailBulk}
-									className="homepage-social-icon"
-								/>
-							</a>
+									<a
+										href={INFO.socials.twitter}
+										target="_blank"
+										rel="noreferrer"
+									>
+										<FontAwesomeIcon
+											icon={faTwitter}
+											className="homepage-social-icon"
+										/>
+									</a>
+									<a
+										href={INFO.socials.github}
+										target="_blank"
+										rel="noreferrer"
+									>
+										<FontAwesomeIcon
+											icon={faGithub}
+											className="homepage-social-icon"
+										/>
+									</a>
+									<a
+										href={INFO.socials.linkedin}
+										target="_blank"
+										rel="noreferrer"
+									>
+										<FontAwesomeIcon
+											icon={faLinkedin}
+											className="homepage-social-icon"
+										/>
+									</a>
+									<a
+										href={`mailto:${INFO.main.email}`}
+										target="_blank"
+										rel="noreferrer"
+									>
+										<FontAwesomeIcon
+											icon={faMailBulk}
+											className="homepage-social-icon"
+										/>
+									</a>
+									<a
+										href={INFO.socials.whatsapp}
+										target="_blank"
+										rel="noreferrer"
+									>
+										<FontAwesomeIcon
+											icon={faWhatsappSquare}
+											className="homepage-social-icon"
+										/>
+									</a>
+								</div>
+								{/* <div className="download-button-container">
+									<a
+										href={Resume}
+										download="PalashResume.pdf"
+										className="download-button"
+										target='_blank'
+									>
+										Download Resume
+									</a>
+								</div> */}
+								<div className="download-button-container">
+									<a target='_blank' href={Resume} download="PalashResume.pdf" className="resume-btn"><i></i><span>Download Resume</span></a>
 								</div>
 							</div>
+						</div>
 
 							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
@@ -154,36 +183,11 @@ const Homepage = () => {
 							</div>
 						</div>
 
-						{/* <div className="homepage-projects">
-							<AllProjects />
-						</div> */}
+						<div className="page-footer">
+							
+						</div>
 
-						{/* <div className="homepage-after-title">
-							<div className="homepage-articles">
-								{myArticles.map((article, index) => (
-									<div
-										className="homepage-article"
-										key={(index + 1).toString()}
-									>
-										<Article
-											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
-										/>
-									</div>
-								))}
-							</div>
 
-							<div className="homepage-works">
-								<Works />
-							</div>
-						</div> */}
-
-						{/* <div className="page-footer">
-							<Footer />
-						</div> */}
 					</div>
 				</div>
 			</div>

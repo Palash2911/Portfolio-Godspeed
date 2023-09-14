@@ -1,63 +1,82 @@
-@import "../../../data/styles.css";
-
+/* Default styles for the footer */
 .footer {
 	display: flex;
-	padding-top: 25px;
-	margin-top: 50px;
-	padding-bottom: 25px;
-	align-items: center;
-}
-
-.footer-links,
-.footer-credits {
-	flex-basis: 50%;
-}
-
-.footer-links {
+    padding-top: 25px;
+    margin-top: 50px;
+    padding-bottom: 25px;
+    align-items: center;
+    color: #fff;
+    font-weight: bolder;
+    justify-content: center;
+  }
+  
+  .footer-links {
 	margin-left: -40px;
-}
-
-.footer-nav-link-list {
+  }
+  
+  .footer-nav-link-list {
 	display: flex;
 	list-style: none;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.footer-nav-link-item {
+	padding-left: 10%;
+	
+  }
+  
+  .footer-nav-link-item {
 	font-weight: bold;
 	font-size: 80%;
-}
 
-.footer-nav-link-list a {
+  }
+  
+  .footer-nav-link-list a {
 	text-decoration: none;
 	color: var(--secondary-color);
-}
-
-.footer-nav-link-list a:hover {
+  }
+  
+  .footer-nav-link-list a:hover {
 	color: var(--link-color);
-}
-
-.footer-credits-text {
+  }
+  
+  .footer-credits-text {
 	justify-content: flex-end;
 	color: var(--tertiary-color);
 	font-size: 14px;
 	text-align: right;
-}
+  }
+  
+ /* ... Previous CSS Code ... */
 
 @media (max-width: 600px) {
 	.footer {
-		flex-direction: column;
-		height: 85px;
+	  flex-direction: column;
+	  height: auto; /* Remove fixed height to allow content to expand */
+	  padding: 20px 0; /* Adjust padding */
 	}
-
+  
 	.footer-links {
-		display: flex;
-		width: 100%;
-		justify-content: center;
+	  display: flex;
+	  flex-direction: column; /* Stack links vertically */
+	  align-items: center; /* Center-align links horizontally */
+	}
+  
+	.footer-links ul {
+	  padding-left: 34px;
+	  margin: 0; /* Remove margin to prevent spacing issues */
+	}
+  
+	.footer-links li {
+	  margin: 15px 0; /* Increase spacing between list items */
+	  text-align: center; /* Center-align list items */
+	}
+  
+	.footer-credits-text {
+	  margin-top: 20px;
+	  text-align: center; /* Center-align credits text */
 	}
 
-	.footer-nav-link-list {
-		width: 100%;
+	.footer-nav-link-list a{
+		padding: 2px;
 	}
-}
+  }
+  

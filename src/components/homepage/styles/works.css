@@ -42,3 +42,25 @@
 	text-align: right;
 	color: var(--tertiary-color);
 }
+
+
+@media (max-width: 600px){
+
+	.work-subtitle{
+
+		padding-top: 45px;
+		padding-left: 0px;
+		/* width: 40%; */
+
+	}
+
+	.work-duration{
+		padding-top: 45px;
+		width: 80%;
+	}
+
+	.work{
+		margin-bottom: 4%
+	}
+
+}

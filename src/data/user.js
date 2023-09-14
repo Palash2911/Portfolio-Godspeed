@@ -21,6 +21,7 @@ const INFO = {
 		github: "https://github.com/Palash2911",
 		linkedin: "https://www.linkedin.com/in/palashrambhia/",
 		gmail: "palashzdk@gmail.com",
+		whatsapp: "https://wa.me/+919619142911"
 	},
 
 	homepage: {

@@ -33,7 +33,7 @@ const Contact = () => {
 	
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log(this.state);
+		alert("Form Submitted!");
 	}
 
 	return (
@@ -112,7 +112,14 @@ const Contact = () => {
 										className="form-input"
 										/>
 									</div>
-									<button type="submit" className="submit-button">SUBMIT</button>
+									{/* <button type="submit" className="submit-button">SUBMIT</button> */}
+									<button class="btn">
+										<i class='bx bx-send'></i>
+										<span class="text">
+											Send Message
+										</span>
+										<span class="loading-animate"></span>
+									</button>
 								</form>
 							</div>
 							
@@ -123,30 +130,11 @@ const Contact = () => {
 							</div>
 
 						</div>
-						{/* <div className="subtitle contact-subtitle">
-							Thank you for your interest in getting in touch with
-							me. I welcome your feedback, questions, and
-							suggestions. If you have a specific question or
-							comment, please feel free to email me directly at
-							&nbsp;{" "}
-							<a href={`mailto:${INFO.main.email}`}>
-								{INFO.main.email}
-							</a>
-							. I make an effort to respond to all messages within
-							24 hours, although it may take me longer during busy
-							periods. Alternatively, you can use the contact form
-							on my website to get in touch. Simply fill out the
-							required fields and I'll get back to you as soon as
-							possible.{" "}
-							. 
-						</div> */}
-					</div>
-
-					<div className="page-footer">
-						<Footer />
+						
 					</div>
 				</div>
 			</div>
+			<Footer></Footer>
 		</React.Fragment>
 	);
 };

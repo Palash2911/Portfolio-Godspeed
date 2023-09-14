@@ -92,6 +92,140 @@
 	padding-top: 30px;
 }
 
+.download-button-container {
+	text-align: left; 
+	margin-top: 20px;
+  }
+
+
+  .homepage-resume-social {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 90%;
+	justify-content: space-evenly;
+  }
+  
+.resume-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    gap: 10px;
+    background: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+	border: 1.5px solid black;
+	border-radius: 10px;
+	padding: 6px;
+}
+
+.resume-btn::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+	color: white;
+	border-radius: 10px;
+}
+
+.resume-btn:hover::before
+{
+    transform: scaleX(1);
+    transform-origin: left;  
+	color: white;
+	border-radius: 10px;
+}
+
+.resume-btn span
+{
+    display: inline-block;
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+	border-radius: 9px;
+}
+
+.resume-btn:hover span
+{
+    color: rgb(27, 25, 25);
+	color: white;
+	border-radius: 9px;
+}
+
+.resume-btn i{
+    position: relative;
+    display: inline-block;
+    width: 2px;
+    height: 30px;
+    background: rgb(219, 219, 6);
+    transition: 0.5s, width 0.5s, height 0.5s;
+    transition-delay: 0s, 0.5s, 1s;
+	border-radius: 9px;
+}
+
+.resume-btn:hover i
+{
+    width: 30px;
+    height: 2px;
+    background: rgb(219, 219, 6);
+    transition-delay: 0s, 1s, 0.5s;
+}
+
+.resume-btn i::before
+{
+    content: '';
+    position: absolute;
+    top: 0.5px;
+    right: 0;
+    width: 50%;
+    height: 2px;
+    background: transparent;
+    rotate: 0;
+    transform-origin: right;
+    transition: 1s;
+}
+
+.resume-btn:hover i::before
+{
+    background: rgb(219, 219, 6);
+    rotate: 45deg;
+    transition-delay: 1.5s;
+}
+.resume-btn i::after
+{
+    content: '';
+    position: absolute;
+    top: -0.5px;
+    right: 0;
+    width: 50%;
+    height: 2px;
+    background: transparent;
+    rotate: 0;
+    transform-origin: right;
+    transition: 1s;
+}
+
+.resume-btn:hover i::after
+{
+    background: rgb(219, 219, 6);
+    rotate: -45deg;
+    transition-delay: 1.5s;
+}
+
+
 @media (max-width: 1024px) {
 	.homepage-first-area {
 		flex-direction: column;

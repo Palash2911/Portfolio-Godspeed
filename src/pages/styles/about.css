@@ -115,3 +115,10 @@
 		width: 80%;
 	}
 }
+
+@media (max-width: 600px){
+	.about-logo{
+		top: 8vh;
+		left: 2%;
+	}
+}

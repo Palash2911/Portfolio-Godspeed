@@ -1,34 +1,33 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import styled from "styled-components";
 
-import "./style/article.css";
+// Styled components for the article section
+const ArticleSection = styled.section`
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+`;
 
-const Article = (props) => {
-	const { title, description, link } = props;
+const ArticleTitle = styled.h2`
+  font-size: 24px;
+  margin-bottom: 10px;
+`;
 
-	return (
-		<React.Fragment>
-			<div className="article">
+const ArticleContent = styled.div`
+  font-size: 16px;
+  line-height: 1.5;
+`;
 
-
-				<Link to={link}>
-					<div className="article-right-side">
-						<div className="article-title">{title}</div>
-						<div className="article-description">{description}</div>
-						<div className="article-link">
-							Read Article{" "}
-							<FontAwesomeIcon
-								style={{ fontSize: "10px" }}
-								icon={faChevronRight}
-							/>
-						</div>
-					</div>
-				</Link>
-			</div>
-		</React.Fragment>
-	);
+const WorkArticle = ({ title, content }) => {
+  return (
+    <ArticleSection>
+      <ArticleTitle>{title}</ArticleTitle>
+      <ArticleContent>{content}</ArticleContent>
+    </ArticleSection>
+  );
 };
 
-export default Article;
+export default WorkArticle;

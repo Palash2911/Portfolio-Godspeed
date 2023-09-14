@@ -1,25 +1,38 @@
 .all-projects-container {
 	border-radius: 20px;
 	display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    padding: 2%;
-    margin: auto;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    align-items: flex-start;
+	width: 100%;
+	flex-wrap: wrap;
+	padding: 2%;
+	margin: auto;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	align-items: flex-start;
 	margin-left: -20px;
-}
-
-.all-projects-project {
-	width: calc(100% / 3);
+	min-height: 100vh; /* Ensure a minimum height to prevent cutting off */
+  }
+  
+  .all-projects-project {
 	box-sizing: border-box;
 	padding: 10px;
 	overflow: hidden;
-	
-}
-
-@media (max-width: 600px) {
+  }
+  
+  @media (max-width: 600px) {
 	.all-projects-project {
-		width: calc(100% / 2);
+	  width: 100%; /* Show only one project on mobile */
+	  /* margin-bottom: 20px; Increase gap between projects on mobile */
 	}
-}
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+	.all-projects-project {
+	  width: calc(50% - 20px); /* Show two projects for iPad */
+	}
+  }
+  
+  @media (min-width: 1025px) {
+	.all-projects-project {
+	  width: calc(33.33% - 20px); /* Show three projects for laptop */
+	}
+  }
+  

@@ -4,29 +4,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 const Acheivement = (props) => {
-	const { description } = props;
+  const { description } = props;
 
-	return (
-		<React.Fragment>
-			<div className="achievement">
+  const achievementStyle = {
+    backgroundColor: "#f7f7f7",
+    padding: "20px",
+    border: "1px solid #ddd",
+    borderRadius: "5px",
+    marginBottom: "10px",
+    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+  };
 
-				<div className="achieve-desc">{description}</div>
-				{/* <Link to={link}>
-					<div className="article-right-side">
-						<div className="article-title">{title}</div>
-						<div className="article-description">{description}</div>
-						<div className="article-link">
-							Read Article{" "}
-							<FontAwesomeIcon
-								style={{ fontSize: "10px" }}
-								icon={faChevronRight}
-							/>
-						</div>
-					</div>
-				</Link> */}
-			</div>
-		</React.Fragment>
-	);
+  const descriptionStyle = {
+    fontSize: "16px",
+    color: "#333",
+  };
+
+  return (
+    <React.Fragment>
+      <div className="achievement" style={achievementStyle}>
+        <div className="achieve-desc" style={descriptionStyle}>
+          {description}
+        </div>
+      </div>
+    </React.Fragment>
+  );
 };
 
 export default Acheivement;
