@@ -42,7 +42,7 @@ const Projects = () => {
           {/* Projects Section */}
           <div className="projects-container">
             <div className="title projects-title">
-              <h3>Things I’ve made trying to put my dent in the universe.</h3>
+              <h2>Things I’ve made trying to put my dent in the universe.</h2>
             </div>
             <div className="projects-list">
               <AllProjects />

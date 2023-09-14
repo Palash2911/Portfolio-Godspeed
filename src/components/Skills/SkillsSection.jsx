@@ -55,7 +55,7 @@ const SkillsSection = () => {
 
     return (
         <div className="skills-section : ">
-            <h1>Technical Skills</h1>
+            <h2>Technical Skills</h2>
             <div className="skill-set">
                 <div className="skills">
                     <div>

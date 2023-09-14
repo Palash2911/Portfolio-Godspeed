@@ -8,7 +8,7 @@ const achievements = [
     "3rd Rank in a Coding Competition organized by GCOE, Nagpur in 2021.",
     "3rd Rank in Android Debugging Contest Organised by DY Patil University.",
     "Scored a Band 8 in IELTS Academic English Proficiency Test with each section more than 7.",
-    "Received Certificate of Appreciation for successfully completing 30 Days Cloud Hackathon organised by Google Developer Student Club in 2021.",
+    "Received Certificate of Appreciation for successfully completing 30 Days Cloud Hackathon.",
     "Received Certificate of Appreciation for organising the Tech Fest in our University in 2023."
 ];
 

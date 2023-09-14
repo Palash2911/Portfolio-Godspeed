@@ -12,12 +12,12 @@ const ArticleSection = styled.section`
 `;
 
 const ArticleTitle = styled.h2`
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 10px;
 `;
 
 const ArticleContent = styled.div`
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5;
 `;
 

@@ -1,0 +1,54 @@
+.achievement {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .achievement::before,
+  .achievement::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0%; /* Adjust this value to control the transition width */
+    background: rgb(27, 25, 25); /* Change these colors */
+    transition: all 0.7s ease-out;
+  }
+
+  .achieve-desc {
+    font-size: 16px;
+    position: relative; 
+    color: #FF5733; 
+    z-index: 1; 
+    font-weight: bold;
+  }
+  
+  .achievement::before {
+    left: 0;
+  }
+  
+  .achievement::after {
+    right: 0;
+    width: 0;
+  }
+  
+  .achievement:hover::before {
+    width: 84%;
+  }
+  
+  .achievement:hover::after {
+    width: 0%;
+  }
+
+  .achievement:hover .achieve-desc {
+    color: #ffffff; 
+  }
+  
+  @media (max-width: 1024px) {
+	.achievement:hover::before {
+        width: 100%;
+    }
+      
+    .achievement:hover::after {
+        width: 0%;
+    }
+}
