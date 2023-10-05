@@ -8,11 +8,15 @@ import Socials from "../components/about/socials";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-
+import emailjs from '@emailjs/browser';
 import "./styles/contact.css";
 
 const Contact = () => {
 
+	const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+	const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+	const userId = process.env.REACT_APP_EMAILJS_API_KEY;
+	
 	const [formData, setFormData] = useState({
 		name: '',
 		email: '',
@@ -27,13 +31,26 @@ const Contact = () => {
 	const currentSEO = SEO.find((item) => item.page === "contact");
 
 	const handleChange = (e) => {
+		console.log(serviceId);
 		const { name, value } = e.target;
     	setFormData({ ...formData, [name]: value });
 	}
 	
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		alert("Form Submitted!");
+
+		emailjs.sendForm(serviceId, templateId, e.target, userId).then((result) => {
+			console.log(result.text);
+			setFormData({
+				name: "",
+				email: "",
+				contact: "",
+				message: "",
+			  })
+			alert("Form Submitted!");
+		}, (error) => {
+			console.log(error.text);
+		});
 	}
 
 	return (
@@ -64,7 +81,6 @@ const Contact = () => {
 						<div className="inner-contact-container">
 							<div className="form-container">
 								<form onSubmit={handleSubmit} className="contact-form">
-								{/* <form> */}
 									<div className="form-group">
 										<label htmlFor="name">Name:</label>
 										<input

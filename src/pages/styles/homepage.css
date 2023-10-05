@@ -98,13 +98,13 @@
   }
 
 
-  .homepage-resume-social {
+.homepage-resume-social {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 90%;
 	justify-content: space-evenly;
-  }
+}
   
 .resume-btn {
     position: relative;
