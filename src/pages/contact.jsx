@@ -39,17 +39,23 @@ const Contact = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
-		emailjs.sendForm(serviceId, templateId, e.target, userId).then((result) => {
-			console.log(result.text);
+		emailjs.sendForm('service_73xs2n4', 'template_h2gsxlf', e.target, 'fHfVqo4vwDURg2UmA').then((result) => {
 			setFormData({
 				name: "",
 				email: "",
 				contact: "",
 				message: "",
 			  })
-			alert("Form Submitted!");
+			alert("Form Submitted !");
 		}, (error) => {
 			console.log(error.text);
+			setFormData({
+				name: "",
+				email: "",
+				contact: "",
+				message: "",
+			  })
+			alert("Some Error Occurred !");
 		});
 	}
 
