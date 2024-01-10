@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 
 import Socials from "../components/about/socials";
 import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
 import NavBar from "../components/common/navBar";
 
 import emailjs from "@emailjs/browser";
@@ -77,12 +76,6 @@ const Contact = () => {
       <div className="page-content">
         <NavBar active="contact" />
         <div className="content-wrapper">
-          <div className="contact-logo-container">
-            <div className="contact-logo">
-              <Logo width={46} />
-            </div>
-          </div>
-
           <div className="contact-container">
             <div className="title contact-title">
               <strong>Let's Get in Touch</strong>

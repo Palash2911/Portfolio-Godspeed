@@ -2,14 +2,10 @@
   margin-top: 10%;
   border-radius: 20px;
   width: 100%;
-  padding: 2%;
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin-left: -20px;
-}
-.skills-section {
-    text-align: center;
-    margin-top: 8%;
+  text-align: center;
+  margin-top: 8%;
 }
 
 .skill-set{
@@ -51,17 +47,24 @@
 }
 
 @media (max-width: 1000px){
-  .skills{
-      width: 40%;
-  }
-}
-
-@media (max-width: 1000px){
   .skills-section{
-      margin-top: 35%;
+      margin-top: 15%;
   } 
   .skills{
-      width: 100%;
+      width:85%;
+  }
+  .skill-set {
+    justify-content: center;
+  }
+  .skill-item img {
+    width: 30px;
+    height: 30px;
+  }
+  .skills h3 {
+    font-size: 15px;
+  }
+  .skill-name {
+    font-size: 9px;
   }
 }
 
