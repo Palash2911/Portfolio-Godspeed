@@ -1,17 +1,23 @@
-@import "../../../data/styles.css";
+.homepage-logo-container {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
 
 .nav-container {
 	margin: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: sticky;
+	top: 9px;
+	z-index: 100;
 }
 
 .navbar {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: fixed;
 	top: 3vh;
 	z-index: 999;
 	width: 100%;
@@ -62,18 +68,27 @@
 	transition: color 0.3s ease-in-out;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1050px) {
+
+	.homepage-logo-container {
+		width: 50px;
+	}
 
 	.navbar {
-		font-size: 12px;
+		font-size: 2.2vw;
 	}
 
 	.nav-background {
-		width: 80%;
-		height: 40px;
+		width: 84%;
+		height: 25px;
 	}
 
 	.nav-item {
 		font-weight: bold;
+	}
+
+	.nav-list {
+		height: 100%;
+		margin: 0px 20px;
 	}
 }

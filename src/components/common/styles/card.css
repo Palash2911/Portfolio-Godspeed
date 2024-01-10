@@ -1,9 +1,8 @@
-@import "../../../data/styles.css";
-
 .card {
 	mix-blend-mode: normal;
 	border-radius: 20px;
 	outline: 2px solid #f4f4f5;
+	width: 45%;
 }
 
 .card-container {
@@ -23,12 +22,20 @@
 
 .card-title {
 	color: var(--secondary-color);
-	font-size: 14px;
+	font-size: 1.04vw;
 	padding-left: 20px;
 	font-weight: 650;
 }
 
 .card-body {
-	padding-top: 40px;
 	font-size: 15px;
+}
+
+@media (max-width: 1000px){
+	.card {
+		width: 95%;
+	}
+	.card-title {
+		font-size: 2.5vw;
+	}
 }

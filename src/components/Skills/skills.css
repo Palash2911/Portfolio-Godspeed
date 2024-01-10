@@ -1,74 +1,71 @@
-/* styles/skills.css */
 .skills-section {
-    margin-top: 10%;
-	border-radius: 20px;
-	/* display: flex; */
-	width: 100%;
-	/* flex-wrap: wrap; */
-	padding: 2%;
-	margin: auto;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	/* align-items: flex-start; */
-	margin-left: -20px;
-	/* min-height: 100vh; Ensure a minimum height to prevent cutting off */
-  }
+  margin-top: 10%;
+  border-radius: 20px;
+  width: 100%;
+  padding: 2%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: -20px;
+}
 .skills-section {
     text-align: center;
     margin-top: 8%;
-  }
+}
 
-  .skill-set{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: center;
-  }
+.skill-set{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
 
+.skills{
+  width: 42%;
+  text-align: center;
+  align-items: center;
+  padding: 1%;
+  margin: 2%;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;	border-radius: 10px;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.skill-item {
+  margin: 10px;
+  text-align: center;
+}
+
+.skill-item img {
+  max-width: 50px;
+  height: 50px;
+}
+
+.skill-name {
+  font-size: 1.1vw;
+}
+
+@media (max-width: 1000px){
   .skills{
-    width: 42%;
-    text-align: center;
-    align-items: center;
-    padding: 1%;
-    margin: 2%;
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;	border-radius: 10px;
+      width: 40%;
+  }
+}
 
-    
+@media (max-width: 1000px){
+  .skills-section{
+      margin-top: 35%;
+  } 
+  .skills{
+      width: 100%;
   }
-  
-  .skills-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-  
-  .skill-item {
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .skill-item img {
-    max-width: 50px;
-    height: 50px;
-  }
+}
 
-  @media (max-width: 1500px){
-    .skills{
-        width: 40%;
-    }
-  }
 
-  @media (max-width: 600px){
-    .skills-section{
-        margin-top: 35%;
-    } 
-    .skills{
-        width: 100%;
-    }
-  }
-
-  
 
 
 

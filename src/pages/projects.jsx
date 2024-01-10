@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import NavBar from "../components/common/navBar";
+import SkillsSection from "../components/Skills/SkillsSection";
 import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
+import NavBar from "../components/common/navBar";
 import AllProjects from "../components/projects/allProjects";
-import SkillsSection from "../components/Skills/SkillsSection"; 
-import WorkArticles from "./WorkArticle";
-import INFO from "../data/user";
 import SEO from "../data/seo";
+import INFO from "../data/user";
+import WorkArticles from "./WorkArticle";
 import "./styles/projects.css";
 
 const Projects = () => {
@@ -28,12 +27,6 @@ const Projects = () => {
       <div className="page-content">
         <NavBar active="projects" />
         <div className="content-wrapper">
-          <div className="projects-logo-container">
-            <div className="projects-logo">
-              <Logo width={46} />
-            </div>
-          </div>
-          
           {/* Skills Section */}
           <div className="skills-container">
             <SkillsSection />
@@ -52,7 +45,7 @@ const Projects = () => {
           <div className="WorkArticleSec">
             <h2>Publications</h2>
             <div>
-              <WorkArticles/>
+              <WorkArticles />
             </div>
           </div>
 

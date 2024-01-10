@@ -8,7 +8,8 @@
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	align-items: flex-start;
 	margin-left: -20px;
-	min-height: 100vh; /* Ensure a minimum height to prevent cutting off */
+	min-height: 100vh;
+	justify-content: center;
   }
   
   .all-projects-project {

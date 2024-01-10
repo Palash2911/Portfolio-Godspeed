@@ -1,14 +1,5 @@
-@import "../../data/styles.css";
-
-.homepage-logo-container {
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	padding-top: 100px;
-}
-
 .homepage-container {
-	padding-top: 25px;
+	margin-top: 17vh;
 }
 
 .homepage-first-area {
@@ -34,6 +25,7 @@
 .homepage-first-area-right-side {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .homepage-image-container {
@@ -88,13 +80,13 @@
 }
 
 .homepage-works {
-	flex-basis: 600px;
-	padding-top: 30px;
+	padding-top: 60px;
 }
 
 .download-button-container {
 	text-align: left; 
 	margin-top: 20px;
+	border-radius: 10px;
   }
 
 
@@ -227,6 +219,10 @@
 
 
 @media (max-width: 1024px) {
+	.homepage-container {
+		margin-top: 0px;
+	}
+
 	.homepage-first-area {
 		flex-direction: column;
 	}
@@ -275,11 +271,5 @@
 
 	.homepage-articles {
 		flex-basis: auto;
-	}
-
-	.homepage-works {
-		flex-basis: auto;
-		margin-left: -25px;
-		margin-right: -25px;
 	}
 }
