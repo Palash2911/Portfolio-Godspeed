@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 
-import Socials from "../components/about/socials";
-import Footer from "../components/common/footer";
-import NavBar from "../components/common/navBar";
+import Socials from "../../components/about/socials";
+import Footer from "../../components/common/footer";
+import NavBar from "../../components/common/navBar";
 
 import emailjs from "@emailjs/browser";
-import SEO from "../data/seo";
-import INFO from "../data/user";
-import "./styles/contact.css";
+import SEO from "../../data/seo";
+import INFO from "../../data/user";
+import "./contact.css";
 
 const Contact = () => {
   const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
@@ -131,10 +131,10 @@ const Contact = () => {
                       className="form-input"
                     />
                   </div>
-                  <button class="btn">
-                    <i class="bx bx-send"></i>
-                    <span class="text">Send Message</span>
-                    <span class="loading-animate"></span>
+                  <button className="btn">
+                    <i className="bx bx-send"></i>
+                    <span className="text">Send Message</span>
+                    <span className="loading-animate"></span>
                   </button>
                 </form>
               </div>

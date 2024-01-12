@@ -1,11 +1,11 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import Notfound from "./pages/404";
-import About from "./pages/about";
-import Articles from "./pages/articles";
-import Contact from "./pages/contact";
-import Homepage from "./pages/homepage";
-import Projects from "./pages/projects";
+import Articles from "./pages/Achievements/articles";
+import Contact from "./pages/Contact/contact";
+import Projects from "./pages/Creation/projects";
+import About from "./pages/Experience/about";
+import Homepage from "./pages/Homepage/homepage";
 import ReadArticle from "./pages/readArticle";
 
 import "./App.css";

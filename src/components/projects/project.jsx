@@ -1,7 +1,6 @@
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Link } from "react-router-dom";
 
 import "./styles/project.css";
 
@@ -11,24 +10,26 @@ const Project = (props) => {
   return (
     <React.Fragment>
       <div className="project">
-        <Link to={link}>
+        <a href={link} target="_blank" rel="noreferrer">
           <div className="project-container">
+            <div className="project-title-link-container">
+              <p className="project-title">{title}</p>
+              <div className="project-link">
+                <div className="project-link-icon">
+                  <FontAwesomeIcon icon={faLink} />
+                </div>
+
+                <p className="project-link-text">{linkText}</p>
+              </div>
+            </div>
+            <p className="project-description">{description}</p>
             <div className="project-logos">
               {logo.map((item, index) => (
                 <img src={item} alt={`logo-${index}`} key={index} />
               ))}
             </div>
-            <div className="project-title">{title}</div>
-            <div className="project-description">{description}</div>
-            <div className="project-link">
-              <div className="project-link-icon">
-                <FontAwesomeIcon icon={faLink} />
-              </div>
-
-              <div className="project-link-text">{linkText}</div>
-            </div>
           </div>
-        </Link>
+        </a>
       </div>
     </React.Fragment>
   );

@@ -1,9 +1,9 @@
-import cpmc from "../assets/cpmcimg.jpeg";
-import draic from "../assets/draicimg.png";
-import gdsc from "../assets/gdscimg.png";
-import nuance from "../assets/nuanceimg.jpg";
-import ribin from "../assets/ribinimg.png";
-import zylu from "../assets/zyluimg.jpeg";
+import cpmc from "../assets/images/cpmcimg.jpeg";
+import draic from "../assets/images/draicimg.png";
+import gdsc from "../assets/images/gdscimg.png";
+import nuance from "../assets/images/nuanceimg.jpg";
+import ribin from "../assets/images/ribinimg.png";
+import zylu from "../assets/images/zyluimg.jpeg";
 
 const workExperience = [
   {

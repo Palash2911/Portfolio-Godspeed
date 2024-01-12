@@ -1,8 +1,7 @@
 .project {
 	mix-blend-mode: normal;
 	border-radius: 20px;
-	opacity: 0.8;
-	height: 100%;
+	opacity: 0.9;
 }
 
 .project a {
@@ -22,7 +21,10 @@
 
 .project-container {
 	padding: 30px;
-	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;	border-radius: 10px;
+	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;	
+	border-radius: 10px;
+	height: 230px;
+	margin: 30px 10px;
 }
 
 .project-logos {
@@ -38,25 +40,34 @@
 	width: 50px;
 }
 
-.project-title {
+.project-title-link-container {
 	font-family: var(--secondary-font);
 	color: var(--primary-color);
-	font-size: 16px;
-	padding-top: 15px;
-	margin-bottom: 1em;
-	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 30px;
+	font-weight: bolder;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.project-title, .project-link-text {
+	margin: 0px;
 }
 
 .project-description {
-	color: var(--secondary-color);
+	color: rgba(0, 0, 0, 0.702);
+	font-size: 16px;
+	font-weight: 500;
+	text-align: justify;
 }
 
 .project-link {
 	display: flex;
 	align-items: center;
 	color: var(--secondary-color);
-	font-size: 12px;
-	padding-top: 20px;
+	font-size: 15px;
 }
 
 .project-link-icon {
@@ -65,12 +76,24 @@
 }
 
 .project-link-text {
-	padding-left: 20px;
+	padding-left: 10px;
 	font-weight: 700;
 }
 
-@media (max-width: 600px) {
-	.project {
-		height: 400px;
+@media (max-width: 1150px) {
+	.project-container {
+		height: 250px;
+		padding: 20px;
+	}
+	.project-logos img {
+		width: 40px;
+		height: 30px;
+	} 
+	.project-link-text {
+		padding: 6px;
+		font-size: 11px;
+	}
+	.project-title {
+		font-size: 13px;
 	}
 }

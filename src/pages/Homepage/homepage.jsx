@@ -10,14 +10,14 @@ import {
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Resume from "../assets/Palash_Resume.pdf";
-import NavBar from "../components/common/navBar";
+import Resume from "../../assets/Palash_Resume.pdf";
+import NavBar from "../../components/common/navBar";
 
-import palashimg from "../assets/palashimg.jpg";
-import SEO from "../data/seo";
-import INFO from "../data/user";
+import palashimg from "../../assets/images/palashimg.jpg";
+import SEO from "../../data/seo";
+import INFO from "../../data/user";
 
-import "./styles/homepage.css";
+import "./homepage.css";
 
 const Homepage = () => {
   const currentSEO = SEO.find((item) => item.page === "home");
@@ -98,9 +98,8 @@ const Homepage = () => {
                   </div>
                   <div className="download-button-container">
                     <a
-                      target="_blank"
                       href={Resume}
-                      download="PalashResume.pdf"
+                      download="Palash_Resume"
                       className="resume-btn"
                       rel="noreferrer"
                     >

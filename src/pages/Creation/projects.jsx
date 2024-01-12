@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import SkillsSection from "../components/Skills/SkillsSection";
-import Footer from "../components/common/footer";
-import NavBar from "../components/common/navBar";
-import AllProjects from "../components/projects/allProjects";
-import SEO from "../data/seo";
-import INFO from "../data/user";
-import WorkArticles from "./WorkArticle";
-import "./styles/projects.css";
+import SkillsSection from "../../components/Skills/SkillsSection";
+import Footer from "../../components/common/footer";
+import NavBar from "../../components/common/navBar";
+import AllProjects from "../../components/projects/allProjects";
+import SEO from "../../data/seo";
+import INFO from "../../data/user";
+import WorkArticles from "../WorkArticle";
+import "./projects.css";
 
 const Projects = () => {
   useEffect(() => {

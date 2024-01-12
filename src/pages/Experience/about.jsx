@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import Footer from "../components/common/footer";
-import NavBar from "../components/common/navBar";
+import Footer from "../../components/common/footer";
+import NavBar from "../../components/common/navBar";
 // import Socials from "../components/about/socials";
-import Works from "../components/homepage/works";
+import Works from "../../components/homepage/works";
 
-import SEO from "../data/seo";
-import INFO from "../data/user";
+import SEO from "../../data/seo";
+import INFO from "../../data/user";
 
-import "./styles/about.css";
+import "./about.css";
 
 const About = () => {
   useEffect(() => {

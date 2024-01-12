@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import Footer from "../components/common/footer";
-import NavBar from "../components/common/navBar";
+import Footer from "../../components/common/footer";
+import NavBar from "../../components/common/navBar";
 
-import Achievement from "../components/achievements/achieve";
-import Achieve from "../data/achievements";
-import SEO from "../data/seo";
-import INFO from "../data/user";
+import Achievement from "../../components/achievements/achieve";
+import Achieve from "../../data/achievements";
+import SEO from "../../data/seo";
+import INFO from "../../data/user";
 
-import "./styles/articles.css";
+import "./articles.css";
 
 const Articles = () => {
   useEffect(() => {
