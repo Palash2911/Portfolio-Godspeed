@@ -11,13 +11,13 @@ import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Resume from "../../assets/Palash_Resume.pdf";
-import NavBar from "../../components/common/navBar";
+import NavBar from "../../components/Navbar/Navbar-Component";
 
 import palashimg from "../../assets/images/palashimg.jpg";
 import SEO from "../../data/seo";
 import INFO from "../../data/user";
 
-import "./homepage.css";
+import "./Homepage.css";
 
 const Homepage = () => {
   const currentSEO = SEO.find((item) => item.page === "home");

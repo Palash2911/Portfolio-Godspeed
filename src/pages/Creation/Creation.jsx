@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import Footer from "../../components/Footer/Footer";
+import NavBar from "../../components/Navbar/Navbar-Component";
 import SkillsSection from "../../components/Skills/SkillsSection";
-import Footer from "../../components/common/footer";
-import NavBar from "../../components/common/navBar";
+import WorkArticles from "../../components/WorkArticle";
 import AllProjects from "../../components/projects/allProjects";
 import SEO from "../../data/seo";
 import INFO from "../../data/user";
-import WorkArticles from "../WorkArticle";
-import "./projects.css";
+import "./Creation.css";
 
-const Projects = () => {
+const Creations = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -58,4 +58,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Creations;

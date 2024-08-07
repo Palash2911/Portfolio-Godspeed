@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import Footer from "../../components/common/footer";
-import NavBar from "../../components/common/navBar";
+import Footer from "../../components/Footer/Footer";
+import NavBar from "../../components/Navbar/Navbar-Component";
 
 import Achievement from "../../components/achievements/achieve";
 import Achieve from "../../data/achievements";
 import SEO from "../../data/seo";
 import INFO from "../../data/user";
 
-import "./articles.css";
+import "./Achievements.css";
 
-const Articles = () => {
+const Achievements = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -47,4 +47,4 @@ const Articles = () => {
   );
 };
 
-export default Articles;
+export default Achievements;

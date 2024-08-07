@@ -1,12 +1,9 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-
-import Notfound from "./pages/404";
-import Articles from "./pages/Achievements/articles";
-import Contact from "./pages/Contact/contact";
-import Projects from "./pages/Creation/projects";
-import About from "./pages/Experience/about";
-import Homepage from "./pages/Homepage/homepage";
-import ReadArticle from "./pages/readArticle";
+import Achievements from "./pages/Achievements/Achievements";
+import Contact from "./pages/Contact/Contact";
+import Creations from "./pages/Creation/Creation";
+import Experience from "./pages/Experience/Experience";
+import Homepage from "./pages/Homepage/Homepage";
 
 import "./App.css";
 
@@ -17,12 +14,10 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<Homepage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/achievements" element={<Articles />} />
-            <Route path="/article/:slug" element={<ReadArticle />} />
+            <Route path="/about" element={<Experience />} />
+            <Route path="/projects" element={<Creations />} />
+            <Route path="/achievements" element={<Achievements />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<Notfound />} />
           </Routes>
         </Router>
       </div>

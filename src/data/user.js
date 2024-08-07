@@ -25,7 +25,7 @@ const INFO = {
   },
 
   homepage: {
-    title: "Palash | Crafting Code ->> Building Dreams",
+    title: "Palash | Crafting Code --- Building Dreams",
     description:
       "An enthusiastic techie on a journey to revolutionize the tech world, one line of code at a time, while constantly exploring new horizons to push the boundaries of innovation.",
   },

@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 
 import Socials from "../../components/about/socials";
-import Footer from "../../components/common/footer";
-import NavBar from "../../components/common/navBar";
+import Footer from "../../components/Footer/Footer";
+import NavBar from "../../components/Navbar/Navbar-Component";
 
 import emailjs from "@emailjs/browser";
 import SEO from "../../data/seo";
 import INFO from "../../data/user";
-import "./contact.css";
+import "./Contact.css";
 
 const Contact = () => {
   const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;

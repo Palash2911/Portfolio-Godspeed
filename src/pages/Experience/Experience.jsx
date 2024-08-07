@@ -1,17 +1,16 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import Footer from "../../components/common/footer";
-import NavBar from "../../components/common/navBar";
-// import Socials from "../components/about/socials";
-import Works from "../../components/homepage/works";
+import Works from "../../components/Experience-Component/Works";
+import Footer from "../../components/Footer/Footer";
+import NavBar from "../../components/Navbar/Navbar-Component";
 
 import SEO from "../../data/seo";
 import INFO from "../../data/user";
 
-import "./about.css";
+import "./Experience.css";
 
-const About = () => {
+const Experience = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -43,4 +42,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Experience;
