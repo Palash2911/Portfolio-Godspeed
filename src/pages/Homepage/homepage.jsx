@@ -85,7 +85,7 @@ const Homepage = () => {
                         className="homepage-social-icon"
                       />
                     </a>
-                    <a
+{/*                     <a
                       href={INFO.socials.whatsapp}
                       target="_blank"
                       rel="noreferrer"
@@ -94,7 +94,7 @@ const Homepage = () => {
                         icon={faWhatsappSquare}
                         className="homepage-social-icon"
                       />
-                    </a>
+                    </a> */}
                   </div>
                   <div className="download-button-container">
                     <a
