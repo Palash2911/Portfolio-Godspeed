@@ -1,13 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-import {
-  faGithub,
-  faLinkedin,
-  faTwitter,
-  faWhatsappSquare,
-} from "@fortawesome/free-brands-svg-icons";
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Resume from "../../assets/Palash_Resume.pdf";
@@ -46,16 +41,6 @@ const Homepage = () => {
                 <div className="homepage-resume-social">
                   <div className="homepage-socials">
                     <a
-                      href={INFO.socials.twitter}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        icon={faTwitter}
-                        className="homepage-social-icon"
-                      />
-                    </a>
-                    <a
                       href={INFO.socials.github}
                       target="_blank"
                       rel="noreferrer"
@@ -81,20 +66,10 @@ const Homepage = () => {
                       rel="noreferrer"
                     >
                       <FontAwesomeIcon
-                        icon={faMailBulk}
+                        icon={faEnvelope}
                         className="homepage-social-icon"
                       />
                     </a>
-{/*                     <a
-                      href={INFO.socials.whatsapp}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        icon={faWhatsappSquare}
-                        className="homepage-social-icon"
-                      />
-                    </a> */}
                   </div>
                   <div className="download-button-container">
                     <a
@@ -115,7 +90,7 @@ const Homepage = () => {
                   <div className="homepage-image-wrapper">
                     <img
                       src={palashimg}
-                      alt="about"
+                      alt="Palash Rambhia"
                       className="homepage-image"
                     />
                   </div>

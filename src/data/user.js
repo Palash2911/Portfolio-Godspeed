@@ -1,101 +1,70 @@
-import as from "../assets/skillsImages/androidstudio.png";
-import css from "../assets/skillsImages/cssimg.jpg";
-import dart from "../assets/skillsImages/dartimg.png";
-import fb from "../assets/skillsImages/firebaseimg.png";
-import fl from "../assets/skillsImages/flutter.png";
-import gh from "../assets/skillsImages/github.png";
-import jet from "../assets/skillsImages/jetpackimg.png";
-import kot from "../assets/skillsImages/kotlin.png";
-import react from "../assets/skillsImages/reactimg.jpg";
+import githubImage from "../assets/skillsImages/github.png";
+import nodeImage from "../assets/skillsImages/nodejs.jpg";
+import pythonImage from "../assets/skillsImages/pythonimg.png";
+import reactImage from "../assets/skillsImages/reactimg.jpg";
+import firebaseImage from "../assets/skillsImages/firebaseimg.png";
 
 const INFO = {
   main: {
     title: "Palash Rambhia",
     name: "Palash Rambhia",
-    email: "palashzdk@gmail.com",
+    email: "palashrambhia2@gmail.com",
     logo: "../logo.png",
   },
 
   socials: {
-    twitter: "https://twitter.com/Palash_Rambhia",
     github: "https://github.com/Palash2911",
     linkedin: "https://www.linkedin.com/in/palashrambhia/",
-    gmail: "palashzdk@gmail.com",
-    whatsapp: "https://wa.me/+919619142911",
+    gmail: "palashrambhia2@gmail.com",
   },
 
   homepage: {
-    title: "Palash | Crafting Code ->> Building Dreams",
+    title: "Software Engineer · Cloud · Full-Stack · Mobile",
     description:
-      "An enthusiastic techie on a journey to revolutionize the tech world, one line of code at a time, while constantly exploring new horizons to push the boundaries of innovation.",
+      "I build and scale production systems — from real-time chat infrastructure handling 10k+ concurrent users to cloud-native ML pipelines. Currently a Teaching Associate at Monash University mentoring 600+ students, while staying deep in cloud-native development and system design.",
   },
 
   about: {
-    title: "I’m xyz. I live in abc, where I develop the future.",
+    title: "I'm Palash Rambhia. I live in Melbourne, and I build things that scale.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Software engineer with production experience across mobile, web, and cloud — including work with a Microsoft subsidiary (Nuance) and a Google-partnered initiative (Smollan Group). I care deeply about system design, clean APIs, and mentorship. Currently pursuing my Master's at Monash University while teaching 600+ students.",
   },
 
   achievements: {
-    title:
-      "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
+    title: "Milestones, recognitions, and things worth mentioning.",
     description:
-      "Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
+      "A collection of academic honours, competition results, certifications, and professional milestones.",
   },
 
   projects: [
     {
-      title: "Aikyam",
+      title: "CloudLens",
       description:
-        "Aikyam: Connecting NGOs and Volunteers for a Better World. NGOs post events, volunteers apply. Simple, User-Friendly, Impactful.",
-      logo: [fl, dart, fb, gh, as],
-      linkText: "Discover Aikyam",
-      link: "https://github.com/Palash2911/Aikyam",
+        "Cloud-native object detection system for waste management teams to automate plastic classification. Built with FastAPI and YOLO, containerised with Docker, deployed on Kubernetes with Terraform-managed infrastructure and Locust load testing. Stack: GCP · FastAPI · YOLO · Docker · Kubernetes · Terraform · Locust",
+      logo: [pythonImage, githubImage],
+      linkText: "View on GitHub",
+      // TODO: Add live demo link when deployed
+      link: "https://github.com/Palash2911",
     },
 
     {
-      title: "Rempo",
+      title: "Rentara",
       description:
-        "Rempo: Sell, Bid, and Buy Agricultural Land and Plots. List your huge properties effortlessly on our website.",
-      logo: [kot, as, fb, gh, react],
-      linkText: "Explore Rempo",
-      link: "https://github.com/Palash2911/Rempo",
+        "Full-stack rental management platform for local agencies and landlords to manage properties, tenants, and ownership workflows. Uses GraphQL APIs, PostgreSQL via Prisma ORM, Redis caching, and Docker deployment. Stack: Node.js · React · GraphQL · PostgreSQL · Redis · Docker",
+      logo: [nodeImage, reactImage, githubImage],
+      linkText: "View on GitHub",
+      // TODO: Add repository link when public
+      link: "https://github.com/Palash2911",
     },
 
     {
-      title: "Athena",
+      title: "EduFlow CMS",
       description:
-        "Athena: Your Storytelling Companion. Create captivating stories with ease using OpenAI's powerful API.",
-      logo: [kot, jet, gh, fb, as],
-      linkText: "Gaze Athena",
-      link: "https://github.com/Palash2911/Athena",
-    },
-
-    {
-      title: "T-Vis",
-      description:
-        "Created T-vis: A Mobile App Enhancing Campus Security. Real-time vehicle tracking, QR code entry, and controlled access.",
-      logo: [fl, dart, fb, gh, as],
-      linkText: "Drive to T-Vis",
-      link: "https://github.com/Palash2911/T-vis",
-    },
-
-    {
-      title: "DRAIC Website",
-      description:
-        "One of the Creators of DRAIC official Website. Showcasing portfolio of the club including its achievements, projects, and much more.",
-      logo: [react, css, gh],
-      linkText: "Glimpse at Draic",
-      link: "https://github.com/Palash2911/DRAIC-Website",
-    },
-
-    {
-      title: "UN-Toxic",
-      description:
-        "UN-Toxic: Your Quit Smoking Buddy. Track progress, set goals, stay motivated, and more with this Android app.",
-      logo: [kot, as, fb],
-      linkText: "Intoxicate UN-Toxic",
-      link: "https://github.com/Palash2911/UN-Toxic",
+        "Production CMS for coaching institutes in India to manage students, schedules, and admin workflows. Features real-time Firebase sync, an AI chatbot, and n8n-based automation pipelines. Stack: React · Firebase · Tailwind CSS · N8N · AI Automation",
+      logo: [reactImage, firebaseImage, githubImage],
+      linkText: "View on GitHub",
+      // TODO: Add repository link when public
+      link: "https://github.com/Palash2911",
     },
   ],
 };

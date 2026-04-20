@@ -35,7 +35,7 @@ const Projects = () => {
           {/* Projects Section */}
           <div className="projects-container">
             <div className="title projects-title">
-              <h2>Things I’ve made trying to put my dent in the universe.</h2>
+              <h2>Things I’ve built — production systems, tools, and experiments.</h2>
             </div>
             <div className="projects-list">
               <AllProjects />

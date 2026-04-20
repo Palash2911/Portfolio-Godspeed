@@ -40,7 +40,7 @@ const Contact = () => {
         "service_73xs2n4",
         "template_h2gsxlf",
         e.target,
-        "fHfVqo4vwDURg2UmA"
+        "fHfVqo4vwDURg2UmA",
       )
       .then(
         (result) => {
@@ -61,7 +61,7 @@ const Contact = () => {
             message: "",
           });
           alert("Some Error Occurred !");
-        }
+        },
       );
   };
 

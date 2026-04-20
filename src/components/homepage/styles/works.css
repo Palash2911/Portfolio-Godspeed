@@ -24,7 +24,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-    height: 30px;
+    height: auto;
     align-items: flex-start;
 	margin-left: 20px;
 }
@@ -44,6 +44,23 @@
 	border-radius: 50%;
 	outline: 6px solid white;
 	box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
+}
+
+.work-initials {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--quaternary-color);
+	color: var(--secondary-color);
+	font-size: 10px;
+	font-weight: 700;
+	flex-shrink: 0;
+}
+
+.work-grade {
+	font-size: 0.8vw;
+	color: var(--tertiary-color);
+	margin-top: 2px;
 }
 
 .work-title {
@@ -99,5 +116,13 @@
 
 	.lower-work-container {
 		width: 55vw;
+	}
+
+	.work-grade {
+		font-size: 1.8vw;
+	}
+
+	.work-initials {
+		font-size: 8px;
 	}
 }
