@@ -1,75 +1,85 @@
-import cpmc from "../assets/images/cpmcimg.jpeg";
-import gdsc from "../assets/images/gdscimg.png";
-import nuance from "../assets/images/nuanceimg.jpg";
-import ribin from "../assets/images/ribinimg.png";
-// TODO: Add Monash University logo to src/assets/images/monashimg.png
-// TODO: Add Smollan Group logo to src/assets/images/smollanimg.png
-
-const workExperience = [
+const professional = [
   {
-    logo: null, // TODO: replace with monashimg when available
-    companyName: "Monash University",
+    company: "Monash University",
     role: "Teaching Associate",
-    servingDate: "Jul 2025 – Present",
+    type: "Full-Time",
+    period: "Jul 2025 — Present",
     location: "Melbourne, Australia",
+    points: [
+      "Deliver weekly tutorials across C++ Programming and Web Fundamentals units, mentoring 600+ students through structured code reviews and hands-on sessions.",
+      "Maintained an 86% SETU feedback score, reflecting consistent tutorial quality and student engagement.",
+      "Volunteering as Product Owner in an industry experience unit, leading students through real-world projects using agile practices.",
+    ],
   },
   {
-    logo: null, // TODO: replace with smollanimg when available
-    companyName: "Smollan Group (Google-Partnered)",
+    company: "Smollan Group (Google-Partnered Initiative)",
     role: "Flutter Tech Lead",
-    servingDate: "Jul 2024 – Mar 2025",
+    type: "Technical Consultant",
+    period: "Jul 2024 — Mar 2025",
     location: "Mumbai, India",
+    points: [
+      "Led Flutter development delivering 10+ production releases for a global retail app used by Google store employees across multiple countries, reducing UI load time by 40%.",
+      "Architected and shipped a real-time chat feature using FastAPI and Firebase, serving as a primary communication tool for 10k+ concurrent users.",
+      "Established a CI/CD pipeline with GitHub Actions to enforce code quality gates, eliminating bad code reaching production.",
+      "Integrated GCP and Firebase services across the app stack, ensuring scalable backend communication and stable data handling.",
+    ],
   },
   {
-    logo: ribin,
-    companyName: "CloserTech Private Limited",
+    company: "CloserTech Private Limited",
     role: "React Native Developer",
-    servingDate: "Aug 2023 – Jul 2024",
+    type: "Software Engineer",
+    period: "Aug 2023 — Jul 2024",
     location: "Mumbai, India",
+    points: [
+      "Sole engineer on a full rebuild of Ribin, migrating from Ionic + MongoDB to React Native + MySQL, improving performance and codebase ownership.",
+      "Drove MongoDB to MySQL migration and introduced Redis caching, eliminating redundant queries, improving app performance by 25%.",
+      "Built and deployed a React.js + Node.js website with purchase flow, handling 5,000–6,000 concurrent user traffic.",
+    ],
   },
   {
-    logo: nuance,
-    companyName: "Nuance Communications (Microsoft)",
+    company: "Nuance Communications (Microsoft Subsidiary)",
     role: "SDE Intern",
-    servingDate: "May 2023 – Jul 2023",
+    type: "Internship",
+    period: "May 2023 — Jul 2023",
     location: "Pune, India",
+    points: [
+      "Contributed to a graph-based routing algorithm for an IVM system using C++, improving query handling efficiency.",
+      "Refactored AngularJS dashboard components with TypeScript, reducing DOM complexity and improving render performance.",
+    ],
   },
 ];
 
-const leadershipExperience = [
+const leadership = [
   {
-    logo: gdsc,
-    companyName: "Google Developer Students Club (GDSC)",
+    role: "Co-Founder & Vice-Captain",
+    org: "Competitive Programming & Mentorship Club",
+    period: "May 2022 — Jan 2023",
+    points: [
+      "Mentored and instructed more than 100 students in various programming topics and additional soft skills.",
+      "Organised numerous hackathons and workshops for students to exhibit their abilities.",
+    ],
+  },
+  {
     role: "Android Specialist",
-    servingDate: "Aug 2022 – Jun 2023",
+    org: "Google Developer Students Club (GDSC)",
+    period: "Aug 2022 — Jun 2023",
+    points: [
+      "Pioneered the role of Android lead at one of the most esteemed clubs in the university.",
+      "Organised events such as Compose Camp and Flutter Camp to educate students on Google technologies.",
+    ],
   },
   {
-    logo: cpmc,
-    companyName: "Competitive Programming & Mentorship Club",
-    role: "Co-Founder | Vice-Captain",
-    servingDate: "May 2022 – Jan 2023",
+    role: "Technical Team Member",
+    org: "D.Y. Patil Robotics & AI Club (DRAIC)",
+    period: "Sep 2021 — May 2022",
+    points: [
+      "Worked on Arduino-based systems and robotics projects, contributing to circuit design, sensor integration, and prototype testing.",
+      "Helped organise the university's tech fest by coordinating events and assisting participants with technical setups.",
+      "Guided students on getting started with Arduino, robotics fundamentals, and hands-on project building.",
+    ],
   },
 ];
 
-const education = [
-  {
-    institution: "Monash University",
-    degree: "Master of Information Technology",
-    period: "Mar 2025 – Nov 2026 (Expected)",
-    location: "Melbourne, Australia",
-    grade: "WAM: 81 | CGPA: 3.75/4",
-    note: "Teaching Associate",
-  },
-  {
-    institution: "Savitribai Phule Pune University",
-    degree: "B.E. in Information Technology",
-    period: "Jan 2021 – Jun 2024",
-    location: "Pune, India",
-    grade: "CGPA: 8.9/10",
-    note: "",
-  },
-];
+const work = { professional, leadership };
 
-const Experience = [workExperience, leadershipExperience, education];
-
-export default Experience;
+export default work;
