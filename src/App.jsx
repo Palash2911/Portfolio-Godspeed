@@ -1,8 +1,8 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import Notfound from "./pages/404";
+import Arsenal from "./pages/Arsenal/arsenal";
 import Contact from "./pages/Contact/contact";
-import Projects from "./pages/Creation/projects";
 import About from "./pages/Experience/about";
 import Homepage from "./pages/Homepage/homepage";
 import Studies from "./pages/Studies/studies";
@@ -19,7 +19,7 @@ function App() {
             <Route path="/" element={<Homepage />} />
             <Route path="/studies" element={<Studies />} />
             <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/arsenal" element={<Arsenal />} />
             {/* <Route path="/achievements" element={<Articles />} /> */}
             <Route path="/article/:slug" element={<ReadArticle />} />
             <Route path="/contact" element={<Contact />} />

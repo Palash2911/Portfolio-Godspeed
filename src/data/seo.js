@@ -54,6 +54,23 @@ const SEO = [
   },
 
   {
+    page: "arsenal",
+    description:
+      "Tech stack and projects of Palash Rambhia — full-stack, cloud, and mobile skills including React, Node.js, FastAPI, Kubernetes, and Flutter, plus builds like CloudLens, EduFlow CMS, and Rentara.",
+    keywords: [
+      "Palash Rambhia skills",
+      "Palash Rambhia projects",
+      "tech stack",
+      "CloudLens",
+      "EduFlow CMS",
+      "Rentara",
+      "React developer",
+      "Kubernetes",
+      "Flutter developer",
+    ],
+  },
+
+  {
     page: "contact",
     description:
       "Get in touch with Palash Rambhia — software engineer based in Melbourne, Australia. Available for full-time roles, consulting, and research collaborations.",

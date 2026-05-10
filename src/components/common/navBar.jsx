@@ -6,8 +6,7 @@ const NAV_LINKS = [
   { label: "Start", to: "/", key: "home" },
   { label: "Studies", to: "/studies", key: "studies" },
   { label: "Work", to: "/about", key: "about" },
-  { label: "Arsenal", to: "/skills", key: "skills" },
-  { label: "Lab", to: "/projects", key: "projects" },
+  { label: "Arsenal", to: "/arsenal", key: "arsenal" },
   { label: "Let's Talk", to: "/contact", key: "contact" },
 ];
 
