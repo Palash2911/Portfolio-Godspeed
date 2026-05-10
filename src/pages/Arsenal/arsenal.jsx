@@ -3,9 +3,9 @@ import { Helmet } from "react-helmet";
 
 import Footer from "../../components/common/footer";
 import NavBar from "../../components/common/navBar";
+import { projects, skillGroups } from "../../data/arsenal";
 import SEO from "../../data/seo";
 import INFO from "../../data/user";
-import { skillGroups, projects } from "../../data/arsenal";
 
 const CDN = "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/";
 
@@ -111,7 +111,6 @@ const Arsenal = () => {
 
           <main className="w-full flex justify-center px-6 sm:px-10 pt-16 pb-24">
             <div className="w-full max-w-4xl">
-
               {/* ── Page Header ──────────────────────────────────────────── */}
               <div className="flex flex-col items-center mb-14">
                 <p
@@ -137,8 +136,8 @@ const Arsenal = () => {
                     Every great character has a toolkit they've spent years
                     perfecting.
                   </em>{" "}
-                  Here's the inventory — what's loaded, what's battle-tested,
-                  and what gets shipped.
+                  Here's the inventory, what's loaded, what's battle-tested, and
+                  what gets shipped.
                 </p>
               </div>
 
@@ -164,7 +163,9 @@ const Arsenal = () => {
                       {group.skills.map((skill) => {
                         const chipColor =
                           skill.name === "Next.js"
-                            ? dark ? "#e4e4e7" : "#111111"
+                            ? dark
+                              ? "#e4e4e7"
+                              : "#111111"
                             : skill.color;
                         return (
                           <span
@@ -314,14 +315,18 @@ const Arsenal = () => {
                           style={{ color: blueText }}
                         >
                           View on GitHub{" "}
-                          <span className="project-link-arrow" style={{ marginLeft: "4px" }}>→</span>
+                          <span
+                            className="project-link-arrow"
+                            style={{ marginLeft: "4px" }}
+                          >
+                            →
+                          </span>
                         </a>
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
-
             </div>
           </main>
 
