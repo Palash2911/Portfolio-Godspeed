@@ -2,10 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import INFO from "../../data/user";
 
-const Logo = ({ width, link = true }) => {
+const Logo = ({ width, link = true, darkMode = false }) => {
+  const src = darkMode ? INFO.main.logoDark : INFO.main.logo;
+
   const imageElement = (
     <img
-      src={INFO.main.logo}
+      src={src}
       alt="logo"
       width={width}
       style={{

@@ -121,7 +121,7 @@ const NavBar = ({ active }) => {
           }}
         >
           <div style={{ ...pillStyle, padding: "8px 12px", flexShrink: 0 }}>
-            <Logo width={32} link={false} />
+            <Logo width={32} link={false} darkMode={dark} />
           </div>
 
           {/* Nav pill */}

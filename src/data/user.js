@@ -10,6 +10,7 @@ const INFO = {
     name: "Palash Rambhia",
     email: "palashrambhia2@gmail.com",
     logo: "../logo.png",
+    logoDark: "../logo-dark.jpg",
   },
 
   socials: {
