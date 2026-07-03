@@ -1,4 +1,3 @@
-import emailjs from "@emailjs/browser";
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 
@@ -8,6 +7,9 @@ import SEO from "../../data/seo";
 import INFO from "../../data/user";
 
 const CDN = "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/";
+
+// Get your free access key at https://web3forms.com — no signup required.
+const WEB3FORMS_ACCESS_KEY = "dd29c258-c0c6-4155-9c16-c0023755ac28";
 
 const SOCIAL_LINKS = [
   {
@@ -137,29 +139,42 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setSending(true);
     setSubmitStatus(null);
 
-    emailjs
-      .sendForm(
-        "service_73xs2n4",
-        "template_h2gsxlf",
-        e.target,
-        "fHfVqo4vwDURg2UmA",
-      )
-      .then(() => {
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `New message from ${formData.name} via portfolio`,
+          name: formData.name,
+          email: formData.email,
+          contact: formData.contact,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
         setFormData({ name: "", email: "", contact: "", message: "" });
         setSubmitStatus("success");
-      })
-      .catch(() => {
+      } else {
         setSubmitStatus("error");
-      })
-      .finally(() => {
-        setSending(false);
-        setTimeout(() => setSubmitStatus(null), 5000);
-      });
+      }
+    } catch {
+      setSubmitStatus("error");
+    } finally {
+      setSending(false);
+      setTimeout(() => setSubmitStatus(null), 5000);
+    }
   };
 
   const inputStyle = {
