@@ -204,12 +204,12 @@ const Contact = () => {
             <div className="w-full max-w-4xl">
               {/* ── Page Header ──────────────────────────────────────────── */}
               <div className="flex flex-col items-center mb-14">
-                <p
+                {/* <p
                   className="text-xs font-semibold tracking-[0.2em] uppercase mb-3"
                   style={{ color: blueAccent }}
                 >
                   Contact
-                </p>
+                </p> */}
                 <h1
                   className="text-2xl sm:text-3xl font-bold tracking-tight mb-3"
                   style={{

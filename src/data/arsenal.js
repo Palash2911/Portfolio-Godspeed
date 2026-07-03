@@ -60,15 +60,41 @@ export const skillGroups = [
 
 export const projects = [
   {
+    title: "FaunaLens",
+    tagline: "Multi-cloud serverless wildlife observation platform",
+    stack: [
+      "AWS Lambda",
+      "GCP Cloud Run",
+      "RDS PostgreSQL",
+      "Cognito",
+      "SNS",
+      "Next.js",
+    ],
+    points: [
+      "Built a serverless pipeline that automatically detects and classifies Australian fauna from camera trap images using MegaDetector and SpeciesNet, triggered via S3 uploads and EventBridge.",
+      "Designed the AWS side end to end: Lambda functions for tagging, thumbnails, and user sync, RDS PostgreSQL schema, and Cognito auth with cross-cloud JWT validation.",
+      "Integrated a GCP Cloud Run Flask API for queries, tag management, and SNS-based email subscriptions, with a Next.js 15 frontend on Vercel tying it all together.",
+    ],
+    link: "https://github.com/Palash2911/FaunaLens",
+  },
+  {
     title: "CloudLens",
     tagline: "Cloud-native plastic classification on Kubernetes",
-    stack: ["GCP", "FastAPI", "YOLO", "Docker", "Kubernetes", "Ansible", "Locust"],
+    stack: [
+      "GCP",
+      "FastAPI",
+      "YOLO",
+      "Docker",
+      "Kubernetes",
+      "Ansible",
+      "Locust",
+    ],
     points: [
       "Built a cloud-native object detection system for waste management teams to automate plastic classification using FastAPI and YOLO.",
       "Containerised with a multi-stage Docker build, deployed on a 3-node Kubernetes cluster provisioned via Terraform on GCP.",
       "Load-tested with Locust to validate throughput under high concurrent request volume.",
     ],
-    link: "https://github.com/Palash2911",
+    link: "https://github.com/Palash2911/Cloud-Lens",
   },
   {
     title: "EduFlow CMS",
@@ -88,6 +114,6 @@ export const projects = [
       "Full-stack rental management platform for local agencies and landlords to handle properties, tenants, lease agreements, and ownership workflows.",
       "GraphQL API via GraphQL Yoga, PostgreSQL with Prisma ORM, Redis caching, and Docker deployment.",
     ],
-    link: "https://github.com/Palash2911",
+    link: "https://github.com/Palash2911/Rental-CMS",
   },
 ];

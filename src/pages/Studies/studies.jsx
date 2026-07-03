@@ -248,13 +248,23 @@ const Studies = () => {
                         style={{ background: dividerColor }}
                       />
 
-                      {/* Description */}
-                      <p
-                        className="text-sm leading-relaxed"
-                        style={{ color: textSecondary }}
-                      >
-                        {edu.description}
-                      </p>
+                      {/* Bullet points */}
+                      <ul className="flex flex-col gap-2.5">
+                        {edu.points.map((pt, pi) => (
+                          <li key={pi} className="flex gap-3 items-start">
+                            <span
+                              className="mt-2 w-1.5 h-1.5 shrink-0 rounded-full"
+                              style={{ background: blueAccent, opacity: 0.6 }}
+                            />
+                            <p
+                              className="text-sm leading-relaxed text-left"
+                              style={{ color: textSecondary }}
+                            >
+                              {pt}
+                            </p>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
                 ))}

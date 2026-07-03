@@ -132,12 +132,12 @@ const About = () => {
             <div className="w-full max-w-4xl">
               {/* ── Page Header ──────────────────────────────────────────── */}
               <div className="flex flex-col items-center mb-14">
-                <p
+                {/* <p
                   className="text-3xl font-semibold tracking-[0.18em] uppercase mb-3"
                   style={{ color: textTertiary }}
                 >
                   Work
-                </p>
+                </p> */}
                 <h1
                   className="text-2xl sm:text-3xl font-bold tracking-tight mb-3"
                   style={{

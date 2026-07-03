@@ -7,8 +7,11 @@ const education = {
       location: "Melbourne, Australia",
       grade: "WAM: 81 | CGPA: 3.75/4",
       note: "Teaching Associate",
-      description:
-        "Pursuing a Master's in IT at Monash while simultaneously serving as a Teaching Associate, one of the few students doing both at once. Delivering weekly tutorials across three FIT units covering UI/UX Design, C++ Programming, and Web Fundamentals to 600+ students. Staying deep in cloud-native engineering and system design on the side, with a current WAM of 81.",
+      points: [
+        "Pursuing a Master's in IT at Monash while simultaneously serving as a Teaching Associate, one of the few students doing both at once.",
+        "Delivering weekly tutorials across FIT units spanning UI/UX Design, C++ Programming, Web Fundamentals, Data Structures, and Software Testing to 600+ students.",
+        "Staying deep in cloud-native engineering and system design on the side, with a current WAM of 81.",
+      ],
     },
     {
       institution: "Savitribai Phule Pune University",
@@ -17,8 +20,11 @@ const education = {
       location: "Pune, India",
       grade: "CGPA: 8.9/10",
       note: "",
-      description:
-        "Graduated with a CGPA of 8.9 in Information Technology, with a strong focus on systems, mobile development, and competitive programming. Published two research papers during undergrad, one in IEEE Xplore and one in a Google Scholar-indexed conference. Co-founded the Competitive Programming and Mentorship Club, served as Android Specialist at GDSC, and won multiple national-level hackathons and competitions along the way.",
+      points: [
+        "Graduated with a CGPA of 8.9 in Information Technology, with a strong focus on systems, mobile development, and competitive programming.",
+        "Published two research papers during undergrad, one in IEEE Xplore and one in a Google Scholar-indexed conference.",
+        "Co-founded the Competitive Programming and Mentorship Club, served as Android Specialist at GDSC, and won multiple national-level hackathons and competitions along the way.",
+      ],
     },
   ],
 
